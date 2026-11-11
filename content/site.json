@@ -1,0 +1,37 @@
+{
+  "name": "Haworth Men's Shed",
+  "place": "Haworth, West Yorkshire",
+  "tagline": "Shoulder to shoulder, not face to face.",
+  "intro": "Men's Sheds are places where men come together to work on projects, share skills, and simply enjoy each other's company. No pressure, no agenda, just a shed, a cuppa, and good company.",
+  "about_title": "About our shed",
+  "about_text": "Haworth Men's Shed is a small but growing group, currently around ten members strong. We are proudly part of the worldwide Men's Shed movement.\n\nAt the moment we meet on Tuesday afternoons at the Church Hall, which we happily share with a tea and cakes group. It's a friendly space where conversation flows as easily as the tea.",
+  "why_title": "Why a shed?",
+  "why": [
+    {
+      "title": "Make and do",
+      "text": "Woodworking, tinkering and hands-on projects, big or small."
+    },
+    {
+      "title": "Connect",
+      "text": "Friendship and conversation, with no pressure to talk if you'd rather just be busy."
+    },
+    {
+      "title": "Unwind",
+      "text": "A quiet cup of tea, a biscuit, and good company whenever you need it."
+    }
+  ],
+  "facts_title": "Where we are now",
+  "facts": [
+    { "label": "Meetings", "value": "Tuesday afternoons at the Church Hall, Haworth" },
+    { "label": "Members", "value": "Around 10 and growing" },
+    { "label": "Who can come", "value": "Any man who fancies a cuppa and a go at something" }
+  ],
+  "ahead_title": "Looking ahead",
+  "ahead_text": "We're working towards a room of our own with the village hall. The plan is a proper workshop for woodworking and members' projects, alongside a quiet corner for relaxation, friendship, tea and biscuits, the true heart of any Men's Shed.\n\nComing soon: a dedicated home with space to build, tinker, sit, and chat, whatever the day calls for.",
+  "join_title": "Join us",
+  "join_text": "New faces are always welcome. Come along on a Tuesday afternoon for a cuppa and see what we're about. You don't need any tools or skills, just yourself.",
+  "contact_email": "haworthmensshed@gmail.com",
+  "contact_phone": "07800 660997",
+  "facebook_url": "https://www.facebook.com/groups/714316334993764/",
+  "footer": "Haworth Men's Shed. Meets Tuesday afternoons at the Church Hall, Haworth."
+}
