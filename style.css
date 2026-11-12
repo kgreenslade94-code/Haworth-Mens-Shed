@@ -2,6 +2,10 @@
   --green: #4a5d43;
   --brown: #8b5e34;
   --dark: #3b2f2a;
+  --soft: #f1e9d8;
+  --soft-2: #e9dfc9;
+  --line: #d9d2c3;
+  --black: #141414;
   --cream: #faf6ef;
   --band: #f1e9d8;
   --gold: #e8c87a;
@@ -33,7 +37,7 @@ a:hover { color: var(--brown); }
 
 [hidden] { display: none !important; }
 
-.col { width: min(100% - 2 * var(--gutter), 46rem); margin-inline: auto; }
+.col { width: min(100% - 2 * var(--gutter), 74rem); margin-inline: auto; }
 
 .skip { position: absolute; left: -999px; top: 0; background: #fff; color: var(--ink); padding: 0.6rem 1rem; z-index: 20; }
 .skip:focus { left: 0; }
@@ -44,10 +48,9 @@ a:hover { color: var(--brown); }
   background: var(--green);
   color: #fff;
   text-align: center;
-  padding: 1.8rem var(--gutter) 2.2rem;
+  padding: 2.4rem var(--gutter) 2.6rem;
   border-bottom: 5px solid var(--brown);
 }
-.mark { display: block; width: min(11rem, 55%); height: auto; margin: 0 auto 1.1rem; }
 .eyebrow {
   margin: 0 0 0.5rem;
   font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
@@ -59,23 +62,24 @@ a:hover { color: var(--brown); }
 /* Nav bar */
 .nav {
   position: sticky; top: 0; z-index: 10;
-  background: var(--dark);
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
   display: flex; flex-wrap: wrap; justify-content: center;
   gap: 0.2rem 1.6rem;
   padding: 0.7rem var(--gutter);
 }
 .nav a {
-  color: var(--gold); text-decoration: none;
+  color: var(--green); text-decoration: none;
   font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase;
   padding: 0.15rem 0; border-bottom: 1px solid transparent;
 }
-.nav a:hover { color: #fff; border-bottom-color: var(--gold); }
+.nav a:hover { color: var(--brown); border-bottom-color: var(--brown); }
 
 /* Lead */
 .lead { padding: 2.2rem var(--gutter) 2.4rem; text-align: center; }
 .intro {
-  max-width: 40rem; margin: 0 auto;
-  font-style: italic; font-size: 1.2rem; color: var(--green);
+  max-width: 52rem; margin: 0 auto;
+  font-style: italic; font-size: 1.25rem; color: var(--green);
 }
 
 /* Bands */
@@ -90,6 +94,7 @@ h2 {
   margin-bottom: 1.3rem;
 }
 .prose p:last-child { margin-bottom: 0; }
+@media (min-width: 60rem) { .prose { max-width: 56rem; } }
 .prose strong { color: var(--brown); }
 
 /* Why a shed */
@@ -151,14 +156,18 @@ h2 {
   display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
   border: 1px solid #d9d2c3; background: var(--band);
 }
-.gallery li:only-child img { aspect-ratio: auto; max-height: 34rem; object-position: center 35%; }
+.gallery li:only-child img { aspect-ratio: 16 / 9; max-height: 36rem; object-position: center 40%; }
+@media (max-width: 40rem) { .gallery li:only-child img { aspect-ratio: 4 / 3; } }
 .gallery figcaption { font-size: 0.92rem; font-style: italic; padding-top: 0.4rem; }
 
 /* Join / footer */
-.join { background: var(--dark); color: #fff; text-align: center; padding: 2.2rem 0 1.8rem; }
-.join-text { font-size: 1.15rem; max-width: 36rem; margin: 0 auto 1rem; }
-.contact { list-style: none; margin: 0 0 1.4rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.8rem; }
-.contact span { margin-right: 0.5rem; color: var(--gold); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
-.contact a { color: #fff; }
-.contact a:hover { color: var(--gold); }
-.foot { margin: 0; padding-top: 1rem; border-top: 1px solid #5a4b44; font-size: 0.85rem; color: var(--gold); }
+.join { background: var(--soft-2); color: var(--ink); text-align: center; padding: 2.6rem 0 2rem; border-top: 4px solid var(--brown); }
+.join-text { font-size: 1.2rem; max-width: 40rem; margin: 0 auto 1rem; }
+.contact { list-style: none; margin: 0 0 1.6rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 2rem; }
+.contact span { margin-right: 0.5rem; color: var(--brown); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.contact a { color: var(--green); font-weight: 700; }
+.contact a:hover { color: var(--brown); }
+.foot { margin: 0 0 1.6rem; padding-top: 1rem; border-top: 1px solid #cdbf9f; font-size: 0.9rem; color: var(--ink); }
+.plaque { display: inline-block; background: var(--black); padding: 0.9rem 1.2rem; border-radius: 8px; line-height: 0; }
+.plaque img { display: block; width: 9.5rem; height: auto; }
+.plaque:focus-visible { outline-offset: 4px; }
