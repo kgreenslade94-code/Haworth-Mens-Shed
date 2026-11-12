@@ -6,94 +6,78 @@
   <title>Haworth Men's Shed</title>
   <meta name="description" content="Haworth Men's Shed: a friendly group meeting on Tuesday afternoons in Haworth, West Yorkshire. Create, build, connect.">
   <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="top">
-    <div class="wrap top-inner">
-      <a class="brand" href="#top" data-text="name">Haworth Men's Shed</a>
-      <nav aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#why">Why a shed</a>
-        <a href="#ahead">Our plans</a>
-        <a id="nav-gallery" href="#gallery" hidden>Photos</a>
-        <a href="#join">Join us</a>
-      </nav>
-    </div>
+  <header class="masthead" id="top">
+    <img class="mark" src="images/logo.png" alt="Haworth Men's Shed: Create, Build, Connect" width="1000" height="802">
+    <p class="eyebrow" data-text="place">Est. 2025 · Haworth, West Yorkshire</p>
+    <h1 data-text="name">Haworth Men's Shed</h1>
+    <p class="tagline" data-text="tagline">Shoulder to shoulder, not face to face.</p>
   </header>
 
+  <nav class="nav" aria-label="Main">
+    <a href="#about">About us</a>
+    <a href="#why">What we do</a>
+    <a href="#ahead">Our plans</a>
+    <a id="nav-gallery" href="#gallery" hidden>Photos</a>
+    <a href="#join">Join us</a>
+  </nav>
+
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-photo" role="img" aria-label="A hammer, pliers and an adjustable spanner laid out on a wooden workbench"></div>
-      <div class="hero-card">
-        <h1 class="logo-wrap">
-          <img src="images/logo.png" alt="Haworth Men's Shed: Create, Build, Connect" width="1000" height="802">
-        </h1>
-        <p class="tagline" data-text="tagline">Shoulder to shoulder, not face to face.</p>
-        <p class="intro" data-text="intro"></p>
-        <a class="button" href="#join">Come along on a Tuesday</a>
-      </div>
+    <section class="lead">
+      <p class="intro" data-text="intro"></p>
     </section>
 
-    <section class="band" id="about">
-      <div class="wrap two-col">
+    <section class="band tint" id="about">
+      <div class="col">
         <h2 data-text="about_title">About our shed</h2>
         <div class="prose" data-paras="about_text"></div>
       </div>
     </section>
 
-    <section class="band tint" id="why">
-      <div class="wrap">
+    <section class="band" id="why">
+      <div class="col">
         <h2 data-text="why_title">Why a shed?</h2>
         <ul class="why" id="why-list"></ul>
       </div>
     </section>
 
-    <section class="band" id="facts">
-      <div class="wrap two-col">
+    <section class="band tint" id="facts">
+      <div class="col">
         <h2 data-text="facts_title">Where we are now</h2>
         <dl class="facts" id="facts-list"></dl>
       </div>
     </section>
 
-    <section class="band dark" id="ahead">
-      <div class="wrap two-col">
+    <section class="band" id="ahead">
+      <div class="col">
         <h2 data-text="ahead_title">Looking ahead</h2>
-        <div class="prose" data-paras="ahead_text"></div>
+        <div class="prose" id="ahead-text" data-paras="ahead_text"></div>
       </div>
     </section>
 
-    <section class="band" id="gallery" hidden>
-      <div class="wrap">
+    <section class="band tint" id="gallery" hidden>
+      <div class="col">
         <h2 id="gallery-title">In the shed</h2>
         <ul class="gallery" id="gallery-list"></ul>
       </div>
     </section>
-
-    <section class="band join" id="join">
-      <div class="wrap two-col">
-        <h2 data-text="join_title">Join us</h2>
-        <div>
-          <p class="join-text" data-text="join_text"></p>
-          <ul class="contact" id="contact-list"></ul>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap">
-      <p data-text="footer"></p>
+  <footer class="join" id="join">
+    <div class="col">
+      <h2 class="sr-only" data-text="join_title">Join us</h2>
+      <p class="join-text" data-text="join_text"></p>
+      <ul class="contact" id="contact-list"></ul>
+      <p class="foot" data-text="footer"></p>
     </div>
   </footer>
 
   <noscript>
-    <p class="wrap" style="padding:2rem 0">Haworth Men's Shed meets on Tuesday afternoons at the Church Hall, Haworth. Call 07800 660997. This page needs JavaScript switched on to show the rest of its content.</p>
+    <p style="padding:2rem;text-align:center">Haworth Men's Shed meets on Tuesday afternoons at the Church Hall, Haworth. Call 07800 660997. This page needs JavaScript switched on to show the rest of its content.</p>
   </noscript>
 
   <script src="script.js"></script>

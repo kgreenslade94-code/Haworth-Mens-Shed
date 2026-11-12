@@ -44,7 +44,15 @@
     document.querySelectorAll("[data-paras]").forEach(function (node) {
       node.textContent = "";
       paragraphs(s[node.getAttribute("data-paras")]).forEach(function (p) {
-        node.appendChild(el("p", "", p));
+        var para = el("p");
+        var m = p.match(/^([^:]{1,30}:)\s+([\s\S]*)$/);
+        if (node.id === "ahead-text" && m && /^coming soon:$/i.test(m[1])) {
+          para.appendChild(el("strong", "", m[1]));
+          para.appendChild(document.createTextNode(" " + m[2]));
+        } else {
+          para.textContent = p;
+        }
+        node.appendChild(para);
       });
     });
 
@@ -52,6 +60,7 @@
     why.textContent = "";
     (s.why || []).forEach(function (item) {
       var li = el("li");
+      if (item.icon) li.setAttribute("data-icon", item.icon);
       li.appendChild(el("h3", "", item.title));
       li.appendChild(el("p", "", item.text));
       why.appendChild(li);

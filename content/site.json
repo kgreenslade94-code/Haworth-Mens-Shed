@@ -1,6 +1,6 @@
 {
   "name": "Haworth Men's Shed",
-  "place": "Haworth, West Yorkshire",
+  "place": "Est. 2025 · Haworth, West Yorkshire",
   "tagline": "Shoulder to shoulder, not face to face.",
   "intro": "Men's Sheds are places where men come together to work on projects, share skills, and simply enjoy each other's company. No pressure, no agenda, just a shed, a cuppa, and good company.",
   "about_title": "About our shed",
@@ -8,23 +8,35 @@
   "why_title": "Why a shed?",
   "why": [
     {
-      "title": "Make and do",
-      "text": "Woodworking, tinkering and hands-on projects, big or small."
+      "title": "Make & do",
+      "text": "Woodworking, tinkering and hands-on projects, big or small.",
+      "icon": "hammer"
     },
     {
       "title": "Connect",
-      "text": "Friendship and conversation, with no pressure to talk if you'd rather just be busy."
+      "text": "Friendship and conversation, with no pressure to talk if you'd rather just be busy.",
+      "icon": "handshake"
     },
     {
       "title": "Unwind",
-      "text": "A quiet cup of tea, a biscuit, and good company whenever you need it."
+      "text": "A quiet cup of tea, a biscuit, and good company whenever you need it.",
+      "icon": "cup"
     }
   ],
   "facts_title": "Where we are now",
   "facts": [
-    { "label": "Meetings", "value": "Tuesday afternoons at the Church Hall, Haworth" },
-    { "label": "Members", "value": "Around 10 and growing" },
-    { "label": "Who can come", "value": "Any man who fancies a cuppa and a go at something" }
+    {
+      "label": "Meetings",
+      "value": "Tuesday afternoons, Church Hall (shared with the tea & cakes group)"
+    },
+    {
+      "label": "Members",
+      "value": "Around 10 members and growing"
+    },
+    {
+      "label": "Status",
+      "value": "Welcoming new members"
+    }
   ],
   "ahead_title": "Looking ahead",
   "ahead_text": "We're working towards a room of our own with the village hall. The plan is a proper workshop for woodworking and members' projects, alongside a quiet corner for relaxation, friendship, tea and biscuits, the true heart of any Men's Shed.\n\nComing soon: a dedicated home with space to build, tinker, sit, and chat, whatever the day calls for.",
