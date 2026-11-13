@@ -9,7 +9,7 @@
   --cream: #faf6ef;
   --band: #f1e9d8;
   --gold: #e8c87a;
-  --ink: #3b2f2a;
+  --ink: #000;
   --serif: Georgia, "Times New Roman", "DejaVu Serif", serif;
   --gutter: clamp(1rem, 5vw, 2rem);
 }
@@ -31,7 +31,7 @@ body {
 h1, h2, h3 { font-weight: 400; line-height: 1.2; margin: 0; }
 p { margin: 0 0 1em; }
 
-a { color: var(--green); text-underline-offset: 0.18em; }
+a { color: #000; text-underline-offset: 0.18em; }
 a:hover { color: var(--brown); }
 :focus-visible { outline: 3px solid var(--brown); outline-offset: 3px; }
 
@@ -45,8 +45,8 @@ a:hover { color: var(--brown); }
 
 /* Masthead */
 .masthead {
-  background: var(--green);
-  color: #fff;
+  background: var(--soft-2);
+  color: #000;
   text-align: center;
   padding: 2.4rem var(--gutter) 2.6rem;
   border-bottom: 5px solid var(--brown);
@@ -54,10 +54,10 @@ a:hover { color: var(--brown); }
 .eyebrow {
   margin: 0 0 0.5rem;
   font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: #dfe5d8;
+  color: #000;
 }
-.masthead h1 { font-size: clamp(2.2rem, 7vw, 3.1rem); letter-spacing: 0.02em; }
-.tagline { margin: 0.5rem 0 0; font-style: italic; color: #eef1ea; font-size: 1.1rem; }
+.masthead h1 { font-size: clamp(2.2rem, 7vw, 3.1rem); letter-spacing: 0.02em; color: #000; }
+.tagline { margin: 0.5rem 0 0; font-style: italic; color: #000; font-size: 1.1rem; }
 
 /* Nav bar */
 .nav {
@@ -69,17 +69,17 @@ a:hover { color: var(--brown); }
   padding: 0.7rem var(--gutter);
 }
 .nav a {
-  color: var(--green); text-decoration: none;
+  color: #000; text-decoration: none;
   font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase;
   padding: 0.15rem 0; border-bottom: 1px solid transparent;
 }
-.nav a:hover { color: var(--brown); border-bottom-color: var(--brown); }
+.nav a:hover { color: #000; border-bottom-color: #000; }
 
 /* Lead */
 .lead { padding: 2.2rem var(--gutter) 2.4rem; text-align: center; }
 .intro {
   max-width: 52rem; margin: 0 auto;
-  font-style: italic; font-size: 1.25rem; color: var(--green);
+  font-style: italic; font-size: 1.25rem; color: #000;
 }
 
 /* Bands */
@@ -88,14 +88,14 @@ a:hover { color: var(--brown); }
 
 h2 {
   display: inline-block;
-  font-size: 1.55rem; color: var(--green);
+  font-size: 1.55rem; color: #000;
   padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--brown);
   margin-bottom: 1.3rem;
 }
 .prose p:last-child { margin-bottom: 0; }
 @media (min-width: 60rem) { .prose { max-width: 56rem; } }
-.prose strong { color: var(--brown); }
+.prose strong { color: #000; }
 
 /* Why a shed */
 .why {
@@ -121,19 +121,20 @@ h2 {
 .why li[data-icon="hammer"] { --icon: url("images/icons/hammer.svg"); }
 .why li[data-icon="handshake"] { --icon: url("images/icons/handshake.svg"); }
 .why li[data-icon="cup"] { --icon: url("images/icons/cup.svg"); }
-.why h3 { font-size: 1.05rem; font-weight: 700; color: var(--green); margin-bottom: 0.4rem; }
+.why h3 { font-size: 1.05rem; font-weight: 700; color: #000; margin-bottom: 0.4rem; }
 .why p { font-size: 0.95rem; line-height: 1.55; margin: 0; }
 
 /* Where we are now: green panel */
 .facts {
   margin: 0; padding: 1.4rem 1.5rem;
-  background: var(--green); color: #fff;
+  background: var(--soft-2); color: #000;
+  border: 1px solid #cdbf9f; border-top: 3px solid var(--brown);
   display: grid; gap: 1.2rem 1.5rem;
 }
 @media (min-width: 40rem) { .facts { grid-template-columns: repeat(3, 1fr); } }
 .fact dt {
   font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 0.3rem;
+  color: #000; margin-bottom: 0.3rem;
 }
 .fact dd { margin: 0; font-size: 0.98rem; line-height: 1.5; }
 
@@ -164,8 +165,8 @@ h2 {
 .join { background: var(--soft-2); color: var(--ink); text-align: center; padding: 2.6rem 0 2rem; border-top: 4px solid var(--brown); }
 .join-text { font-size: 1.2rem; max-width: 40rem; margin: 0 auto 1rem; }
 .contact { list-style: none; margin: 0 0 1.6rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 2rem; }
-.contact span { margin-right: 0.5rem; color: var(--brown); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
-.contact a { color: var(--green); font-weight: 700; }
+.contact span { margin-right: 0.5rem; color: #000; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.contact a { color: #000; font-weight: 700; }
 .contact a:hover { color: var(--brown); }
 .foot { margin: 0 0 1.6rem; padding-top: 1rem; border-top: 1px solid #cdbf9f; font-size: 0.9rem; color: var(--ink); }
 .plaque { display: inline-block; background: var(--black); padding: 0.9rem 1.2rem; border-radius: 8px; line-height: 0; }
