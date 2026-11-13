@@ -2,12 +2,12 @@
   --green: #4a5d43;
   --brown: #8b5e34;
   --dark: #3b2f2a;
-  --soft: #f1e9d8;
-  --soft-2: #e9dfc9;
-  --line: #d9d2c3;
+  --soft: #fbf7ec;
+  --soft-2: #f8f2e2;
+  --line: #e6dfcf;
   --black: #141414;
-  --cream: #faf6ef;
-  --band: #f1e9d8;
+  --cream: #fffdf7;
+  --band: #faf5e8;
   --gold: #e8c87a;
   --ink: #000;
   --serif: Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -102,14 +102,14 @@ h2 {
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: 1fr;
   background: #fff;
-  border: 1px solid #d9d2c3;
+  border: 1px solid #e6dfcf;
   border-top: 3px solid var(--brown);
 }
 @media (min-width: 40rem) { .why { grid-template-columns: repeat(3, 1fr); } }
-.why li { padding: 1.3rem 1.2rem 1.1rem; text-align: center; border-bottom: 1px solid #d9d2c3; }
+.why li { padding: 1.3rem 1.2rem 1.1rem; text-align: center; border-bottom: 1px solid #e6dfcf; }
 .why li:last-child { border-bottom: 0; }
 @media (min-width: 40rem) {
-  .why li { border-bottom: 0; border-right: 1px solid #d9d2c3; }
+  .why li { border-bottom: 0; border-right: 1px solid #e6dfcf; }
   .why li:last-child { border-right: 0; }
 }
 .why li::before {
@@ -128,7 +128,7 @@ h2 {
 .facts {
   margin: 0; padding: 1.4rem 1.5rem;
   background: var(--soft-2); color: #000;
-  border: 1px solid #cdbf9f; border-top: 3px solid var(--brown);
+  border: 1px solid #e3d9bf; border-top: 3px solid var(--brown);
   display: grid; gap: 1.2rem 1.5rem;
 }
 @media (min-width: 40rem) { .facts { grid-template-columns: repeat(3, 1fr); } }
@@ -155,7 +155,7 @@ h2 {
 .gallery figure { margin: 0; }
 .gallery img {
   display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-  border: 1px solid #d9d2c3; background: var(--band);
+  border: 1px solid #e6dfcf; background: var(--band);
 }
 .gallery li:only-child img { aspect-ratio: 16 / 9; max-height: 36rem; object-position: center 40%; }
 @media (max-width: 40rem) { .gallery li:only-child img { aspect-ratio: 4 / 3; } }
@@ -168,7 +168,7 @@ h2 {
 .contact span { margin-right: 0.5rem; color: #000; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
 .contact a { color: #000; font-weight: 700; }
 .contact a:hover { color: var(--brown); }
-.foot { margin: 0 0 1.6rem; padding-top: 1rem; border-top: 1px solid #cdbf9f; font-size: 0.9rem; color: var(--ink); }
+.foot { margin: 0 0 1.6rem; padding-top: 1rem; border-top: 1px solid #e3d9bf; font-size: 0.9rem; color: var(--ink); }
 .plaque { display: inline-block; background: var(--black); padding: 0.9rem 1.2rem; border-radius: 8px; line-height: 0; }
 .plaque img { display: block; width: 9.5rem; height: auto; }
 .plaque:focus-visible { outline-offset: 4px; }
