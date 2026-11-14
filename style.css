@@ -1,6 +1,10 @@
-/* Haworth Men's Shed styles. Version 4: light cream backgrounds. */
+/* Haworth Men's Shed styles. Version 6: green header and brown stripe from the mock-up, cream page, dark mode switched off. */
 :root {
+  color-scheme: only light;
+  --green: #4a5d43;
   --brown: #8b5e34;
+  --dark: #3b2f2a;
+  --orange: #f39200;
   --soft: #fbf7ec;
   --soft-2: #f8f2e2;
   --line: #e6dfcf;
@@ -43,8 +47,8 @@ a:hover { color: var(--brown); }
 
 /* Masthead */
 .masthead {
-  background: var(--soft-2);
-  color: #000;
+  background: var(--green);
+  color: #fff;
   text-align: center;
   padding: 2.4rem var(--gutter) 2.6rem;
   border-bottom: 5px solid var(--brown);
@@ -52,26 +56,25 @@ a:hover { color: var(--brown); }
 .eyebrow {
   margin: 0 0 0.5rem;
   font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: #000;
+  color: #ffd08a;
 }
-.masthead h1 { font-size: clamp(2.2rem, 7vw, 3.1rem); letter-spacing: 0.02em; color: #000; }
-.tagline { margin: 0.5rem 0 0; font-style: italic; color: #000; font-size: 1.1rem; }
+.masthead h1 { font-size: clamp(2.2rem, 7vw, 3.1rem); letter-spacing: 0.02em; color: #fff; }
+.tagline { margin: 0.5rem 0 0; font-style: italic; color: #f1f4ec; font-size: 1.1rem; }
 
 /* Nav bar */
 .nav {
   position: sticky; top: 0; z-index: 10;
-  background: var(--soft);
-  border-bottom: 1px solid var(--line);
+  background: var(--dark);
   display: flex; flex-wrap: wrap; justify-content: center;
   gap: 0.2rem 1.6rem;
   padding: 0.7rem var(--gutter);
 }
 .nav a {
-  color: #000; text-decoration: none;
+  color: var(--orange); text-decoration: none;
   font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase;
   padding: 0.15rem 0; border-bottom: 1px solid transparent;
 }
-.nav a:hover { color: #000; border-bottom-color: #000; }
+.nav a:hover { color: #fff; border-bottom-color: var(--orange); }
 
 /* Lead */
 .lead { padding: 2.2rem var(--gutter) 2.4rem; text-align: center; }
