@@ -1,14 +1,12 @@
+/* Haworth Men's Shed styles. Version 4: light cream backgrounds. */
 :root {
-  --green: #4a5d43;
   --brown: #8b5e34;
-  --dark: #3b2f2a;
   --soft: #fbf7ec;
   --soft-2: #f8f2e2;
   --line: #e6dfcf;
   --black: #141414;
   --cream: #fffdf7;
   --band: #faf5e8;
-  --gold: #e8c87a;
   --ink: #000;
   --serif: Georgia, "Times New Roman", "DejaVu Serif", serif;
   --gutter: clamp(1rem, 5vw, 2rem);
